@@ -1,0 +1,104 @@
+
+body{
+background-color: black;
+overflow: hidden;               
+}
+
+main::after{                     
+    content: "🐶🐶🐶🐶";       
+    position: fixed;             
+    top:0;                       
+    left: 0;                     
+    min-height: 100vh;           
+    width: 80vw;                 
+   
+}   
+
+main .personagem{
+    display: none;
+    height: 100vh;              
+}
+
+main .personagem.selecionado{
+    display: block;
+}
+
+main .personagem .imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          
+}
+
+.conteudo {
+    position: absolute;         
+    top: 0;                     
+    left: 120px;                
+    display: flex;              
+    flex-direction:column;      
+    justify-content: center;    
+    min-height: 100vh;          
+    max-width: 380px;            
+    z-index: 1;                   
+}
+
+.conteudo .nome-personagem{
+    color: yellowgreen;
+    font-size: 65px;            
+    font-family: "Comic neue";
+   }
+
+.conteudo .descricao{
+    background-color: rgba(0,0,0,0.5);
+    color: whitesmoke;
+    font-weight: 700;
+    font-family: "Comic neue";
+    line-height: 24px;          
+}
+
+.conteudo .logo{
+    background-image: url(../imagens/logo.png); 
+    background-size: cover;     
+    height: 200px;              
+    width: 300px;               
+    margin-bottom: 35px;        
+}
+
+.botoes{
+    position: fixed;            
+    top: 0;                     
+    right: 0;                   
+    display: flex;              
+    flex-direction: column;     
+    min-height: 100vh;          
+    width: 180px;               
+    justify-content: center;    
+    align-items: center;        
+    gap: 10px;                  
+    background-color: rgba(0,0,0,0.3); 
+}
+
+.botoes .selecao{
+    color: yellow;
+    font-family: "Comic neue";
+    font-size: 17px;
+}
+
+.botoes .botao{
+    border: none;               
+    background: none;           
+    cursor: pointer;            
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    height: 80px;               
+    }
+
+.botoes .botao.selecionado{
+    transform: scale(1.3);            
+    box-shadow: 0 0 10px #d9d9d9d9; 
+}
+
+.conteudo .logo{
+    width: 100;
+}
